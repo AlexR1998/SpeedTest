@@ -1,6 +1,7 @@
 import test
 import writer
 import os
+import sys
 
 class executor():
     def __init__(self,record_name,record_directory):
@@ -13,8 +14,9 @@ class executor():
         print(self.data)
     
     def multipleExecution(self,times):
-        for i in range(times-1):
+        for i in range(times):
             self.singleExecution()
 
 my_executor=executor("record.csv",os.getcwd())
-my_executor.multipleExecution(5)
+my_times=int(sys.argv[1])
+my_executor.multipleExecution(my_times)

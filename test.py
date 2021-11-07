@@ -8,6 +8,7 @@ class Test:
 
     def TestExecution(self):
         self.__data.clear()
+        print("Testing...")
         self.__data.append(datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
         self.__data.append(str(round(self.__s.download()/1048576,2)))
         self.__data.append(str(round(self.__s.upload()/1048576,2)))

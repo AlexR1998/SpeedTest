@@ -1,4 +1,4 @@
-$each_time=1
+$each_time=30
 $test_per_time=5
 
 while ($true) {

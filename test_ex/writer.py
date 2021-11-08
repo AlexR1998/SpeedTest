@@ -1,5 +1,5 @@
 import os
-class writer:
+class write:
     def __init__(self,filename,dir):
         self.name=filename
         self.dir=dir

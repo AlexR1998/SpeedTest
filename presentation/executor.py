@@ -17,7 +17,7 @@ class executor():
         for i in range(times):
             self.singleExecution()
 
-path="C:/Users/user/Desktop/speedtest"
+path="C:/Users/user/Desktop/speedtest/presentation"
 my_executor=executor("record.csv",path)
 my_times=int(sys.argv[1])
 my_executor.multipleExecution(my_times)

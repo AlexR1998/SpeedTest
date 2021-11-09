@@ -9,6 +9,7 @@ class write:
         if(os.path.exists(self.dir+"\\"+self.name)):
             print("Record alredy exist")
             return
+        print("Record doesn't exist (creating)")
         f=open(self.name,"w")
         f.write(f"Date,Download,Upload,Name,Country,Sponsor,Latency\n")
         f.close()

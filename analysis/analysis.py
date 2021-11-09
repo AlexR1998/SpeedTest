@@ -1,6 +1,5 @@
 import pandas as pd
 import sqlite3
-
 from pandas.core.indexes.datetimes import DatetimeIndex
 
 class analysis():

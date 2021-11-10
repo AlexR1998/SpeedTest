@@ -3,8 +3,8 @@ from datetime import datetime
 
 class Test:
     def __init__(self):
-        self.__s=Speedtest()
         self.__data=[]
+        self.__s=Speedtest()
 
     def TestExecution(self):
         self.__data.clear()

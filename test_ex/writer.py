@@ -10,12 +10,12 @@ class write:
             print("Record alredy exist")
             return
         print("Record doesn't exist (creating)")
-        f=open(self.name,"w")
+        f=open(self.dir+"\\"+self.name,"w")
         f.write(f"Date,Download,Upload,Name,Country,Sponsor,Latency\n")
         f.close()
 
     def file_recorder(self,content):
-        f=open(self.name,"a")
+        f=open(self.dir+"\\"+self.name,"a")
         for element in content:
             f.write(element+",")
         f.write("\n")
